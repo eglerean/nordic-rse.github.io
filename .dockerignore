@@ -1,0 +1,16 @@
+# Don't copy these into the Docker image
+.git
+.gitignore
+public
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode
+.idea
+README.md
+README.Docker.md
+docker-compose.yml
+Dockerfile
+.dockerignore
+

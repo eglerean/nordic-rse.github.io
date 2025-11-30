@@ -1,0 +1,13 @@
+services:
+  zola:
+    build: .
+    container_name: nordic-rse
+    ports:
+      - "1111:1111"
+      - "1024:1024"   # Add this line for livereload WebSocket
+    volumes:
+      # Mount the project directory for live reloading
+      # Changes made on host will automatically trigger rebuild
+      - .:/app
+    restart: unless-stopped
+
